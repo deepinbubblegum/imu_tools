@@ -12,6 +12,7 @@
     output="screen">
     
     <param name="publish_tf" value="false"/>
-
+    <remap from="imu/data_raw" to="imu_bosch/raw"/>
+    <remap from="imu/mag" to="imu_bosch/mag"/>
   </node>
 </launch>
