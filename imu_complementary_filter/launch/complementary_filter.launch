@@ -25,7 +25,9 @@
     <param name="use_mag" value="true"/>
     <param name="gain_acc" value="0.01"/>
     <param name="gain_mag" value="0.01"/>
-
+    <!-- <param name="bias_alpha" value="1.0"/>
+    <param name="do_bias_estimation" value="false"/>
+    <param name="do_adaptive_gain" value="false"/> -->
 
     <!-- <param name="publish_tf" value="false"/> -->
     <remap from="imu/data_raw" to="bno055/imu"/>
