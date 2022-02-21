@@ -10,10 +10,10 @@
   <node pkg="nodelet" type="nodelet" name="ImuFilterNodelet" 
     args="load imu_filter_madgwick/ImuFilterNodelet imu_manager" 
     output="screen">
-    
-    <param name="publish_tf" value="false"/>
-    <param name="use_mag" value="false"/>
-    <remap from="imu/data_raw" to="imu_bosch/data_raw"/>
-    <remap from="imu/mag" to="imu_bosch/mag"/>
+    <param name="world_frame" value="enu"/>
+    <param name="publish_tf" value="true"/>
+    <param name="use_mag" value="true"/>
+    <remap from="imu/data_raw" to="bno055/imu_raw"/>
+    <remap from="imu/mag" to="bno055/mag"/>
   </node>
 </launch>
